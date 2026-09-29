@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="John Paul Sargento — Full Stack Software Developer portfolio.">
+    <meta name="author" content="John Paul Sargento">
+    <title>John Paul Sargento | Full Stack Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <aside class="sidebar" aria-label="Profile and contact">
+            <button class="mobile-sidebar-toggle" id="sidebarToggle" aria-expanded="false" aria-controls="sidebarDetails">
+                <span class="sr-only">Toggle profile details</span>
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="profile">
+                <div class="profile-image-wrap">
+                    <img id="profileImage" src="assets/images/profile.jpg" alt="Profile image placeholder">
+                </div>
+                <h1 id="profileName">John Paul Sargento</h1>
+                <p id="profileTitle">Full Stack Software Developer</p>
+                <span class="availability"><span class="status-dot"></span><span id="availability">Open to
+                        opportunities</span></span>
+            </div>
+
+            <div class="sidebar-details" id="sidebarDetails">
+                <div class="sidebar-divider"></div>
+
+                <!-- <section class="sidebar-section">
+                    <h2>Contact Info</h2>
+                    <ul class="contact-list">
+                        <li><span class="contact-icon">⌖</span><span id="profileLocation"></span></li>
+                        <li><span class="contact-icon">✉</span><a id="profileEmail" href="#"></a></li>
+                        <li><span class="contact-icon">☎</span><a id="profilePhone" href="#"></a></li>
+                        <li><span class="contact-icon">in</span><a id="profileLinkedin" href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    </ul>
+                </section> -->
+                <section class="sidebar-section">
+                    <h2>Contact Info</h2>
+
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <!-- Location -->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="2.5"></circle>
+                                </svg>
+                            </span>
+                            <span id="profileLocation"></span>
+                        </li>
+
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <!-- Email -->
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <path d="m3 7 9 6 9-6"></path>
+                                </svg>
+                            </span>
+                            <a id="profileEmail" href="#"></a>
+                        </li>
+
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <!-- Phone -->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                                             19.79 19.79 0 0 1-8.63-3.07
+                                             19.5 19.5 0 0 1-6-6
+                                             A19.79 19.79 0 0 1 2.12 4.18
+                                             2 2 0 0 1 4.11 2h3
+                                             a2 2 0 0 1 2 1.72
+                                             12.84 12.84 0 0 0 .7 2.81
+                                             2 2 0 0 1-.45 2.11L8.09 9.91
+                                             a16 16 0 0 0 6 6l1.27-1.27
+                                             a2 2 0 0 1 2.11-.45
+                                             12.84 12.84 0 0 0 2.81.7
+                                             A2 2 0 0 1 22 16.92Z"></path>
+                                </svg>
+                            </span>
+                            <a id="profilePhone" href="#"></a>
+                        </li>
+
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <!-- LinkedIn -->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7
+                                             a2 2 0 0 0-4 0v7h-4v-7
+                                             a6 6 0 0 1 6-6Z"></path>
+                                    <rect x="2" y="9" width="4" height="12" rx="1"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </span>
+                            <a id="profileLinkedin" href="#" target="_blank" rel="noreferrer">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Social Links</h2>
+                    <div class="social-links">
+                        <a id="githubLink" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.85 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                            </svg>
+                        </a>
+
+                        <a id="linkedinLink" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
+                                <rect x="2" y="9" width="4" height="12" rx="1" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+
+                        <a id="emailLink" href="#" aria-label="Email">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <path d="m3 7 9 6 9-6" />
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="sidebar-cta">
+                    <span class="eyebrow">LET'S WORK TOGETHER</span>
+                    <p>I'm open to new opportunities and interesting projects.</p>
+                    <a id="sidebarContact" class="button button-primary" href="#contact">Get In Touch <span>→</span></a>
+                </section>
+            </div>
+
+            <footer class="sidebar-footer">
+                <span>© <span id="currentYear"></span> John Paul Sargento</span>
+                <span>All rights reserved.</span>
+            </footer>
+        </aside>
+
+        <main class="main-content">
+            <nav class="navbar" aria-label="Primary navigation">
+                <button class="nav-link active" data-page="about">About</button>
+                <button class="nav-link" data-page="resume">Resume</button>
+                <button class="nav-link" data-page="portfolio">Portfolio</button>
+                <button class="nav-link" data-page="contact">Contact</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+            </nav>
+
+            <div class="page-content">
+                <article class="page active" data-page-content="about">
+                    <header class="page-heading">
+                        <span class="eyebrow">ABOUT ME</span>
+                        <h2>Hi, I'm <span class="accent" id="heroName">John Paul Sargento</span></h2>
+                        <p class="lead" id="heroTitle">Full Stack Software Developer</p>
+                    </header>
+
+                    <section class="hero-card">
+                        <div class="hero-copy">
+                            <p id="summary"></p>
+                            <div class="stats" id="stats"></div>
+                        </div>
+                        <div class="hero-side-card">
+                            <div class="mini-label">FOCUS</div>
+                            <strong>Scalable web systems</strong>
+                            <p>Backend architecture, APIs, integrations, modern frontend applications and cloud-oriented
+                                delivery.</p>
+                        </div>
+                    </section>
+
+                    <section class="section-block">
+                        <div class="section-title-row">
+                            <div>
+                                <span class="eyebrow">WHAT I DO</span>
+                                <h3>Development &amp; Engineering</h3>
+                            </div>
+                        </div>
+                        <div class="service-grid" id="services"></div>
+                    </section>
+
+                    <section class="section-block">
+                        <div class="section-title-row">
+                            <div>
+                                <span class="eyebrow">SELECTED WORK</span>
+                                <h3>Projects &amp; Integrations</h3>
+                            </div>
+                            <button class="text-button" data-go-page="portfolio">View all →</button>
+                        </div>
+                        <div class="project-grid project-grid-featured" id="featuredProjects"></div>
+                    </section>
+
+                    <section class="section-block">
+                        <div class="section-title-row">
+                            <div>
+                                <span class="eyebrow">TECHNICAL SKILLS</span>
+                                <h3>Tools I Work With</h3>
+                            </div>
+                        </div>
+                        <div class="skill-pills" id="skillPills"></div>
+                    </section>
+
+                    <section class="split-grid section-block">
+                        <div class="panel">
+                            <div class="section-title-row">
+                                <div>
+                                    <span class="eyebrow">EXPERIENCE</span>
+                                    <h3>Professional Journey</h3>
+                                </div>
+                            </div>
+                            <div class="timeline timeline-compact" id="experiencePreview"></div>
+                            <button class="text-button" data-go-page="resume">View full resume →</button>
+                        </div>
+                        <div class="panel">
+                            <div class="section-title-row">
+                                <div>
+                                    <span class="eyebrow">EDUCATION</span>
+                                    <h3>Academic Background</h3>
+                                </div>
+                            </div>
+                            <div id="educationPreview"></div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="page" data-page-content="resume">
+                    <header class="page-heading">
+                        <span class="eyebrow">RESUME</span>
+                        <h2>Experience &amp; Education</h2>
+                        <p class="lead">A detailed overview of my professional experience and technical background.</p>
+                        <div class="resume-download">
+                            <a class="button button-primary resume-download-button" href="assets/documents/John-Paul-Sargento-Resume.pdf" download="John-Paul-Sargento-Resume.pdf">
+                                Download Resume PDF <span>↓</span>
+                            </a>
+                        </div>
+                    </header>
+
+                    <section class="resume-section">
+                        <div class="section-title-row">
+                            <div><span class="eyebrow">EXPERIENCE</span>
+                                <h3>Professional Experience</h3>
+                            </div>
+                        </div>
+                        <div class="timeline" id="experienceFull"></div>
+                    </section>
+
+                    <section class="resume-section">
+                        <div class="section-title-row">
+                            <div><span class="eyebrow">EDUCATION</span>
+                                <h3>Education</h3>
+                            </div>
+                        </div>
+                        <div class="education-list" id="educationFull"></div>
+                    </section>
+
+                    <section class="resume-section">
+                        <div class="section-title-row">
+                            <div><span class="eyebrow">SKILLS</span>
+                                <h3>Skills by Category</h3>
+                            </div>
+                        </div>
+                        <div class="skills-by-category" id="skillsByCategory"></div>
+                    </section>
+                </article>
+
+                <article class="page" data-page-content="portfolio">
+                    <header class="page-heading">
+                        <span class="eyebrow">PORTFOLIO</span>
+                        <h2>Selected Projects</h2>
+                        <p class="lead">A collection of systems, integrations and applications represented by work
+                            described in my resume.</p>
+                    </header>
+                    <div class="filter-row" id="projectFilters"></div>
+                    <div class="project-grid" id="projectGrid"></div>
+                </article>
+
+                <article class="page" data-page-content="contact" id="contact">
+                    <header class="page-heading">
+                        <span class="eyebrow">CONTACT</span>
+                        <h2>Let's work together.</h2>
+                        <p class="lead">Have a project, role or technical challenge in mind? Feel free to reach out.</p>
+                    </header>
+
+                    <!-- <section class="contact-grid">
+                        <div class="panel contact-card">
+                            <span class="eyebrow">GET IN TOUCH</span>
+                            <h3>Contact information</h3>
+                            <div class="contact-detail"><span>EMAIL</span><a id="contactEmail" href="#"></a></div>
+                            <div class="contact-detail"><span>PHONE</span><a id="contactPhone" href="#"></a></div>
+                            <div class="contact-detail"><span>LOCATION</span><strong id="contactLocation"></strong></div>
+                            <div class="contact-detail"><span>LINKEDIN</span><a id="contactLinkedin" href="#" target="_blank" rel="noreferrer">View LinkedIn</a></div>
+                            <div class="contact-detail"><span>GITHUB</span><a id="contactGithub" href="#" target="_blank" rel="noreferrer">View GitHub</a></div>
+                        </div>
+                        <div class="panel">
+                            <span class="eyebrow">QUICK NOTE</span>
+                            <h3>Project links are ready to customize.</h3>
+                            <p>Each portfolio project has a URL field in <code>data/resume.json</code>. Replace the empty placeholders with live project, case study or repository URLs when you're ready.</p>
+                            <a id="contactEmailButton" class="button button-primary" href="#">Send an Email <span>→</span></a>
+                        </div>
+                    </section> -->
+                    <section class="contact-grid">
+                        <div class="panel contact-card">
+                            <span class="eyebrow">GET IN TOUCH</span>
+                            <h3>Contact information</h3>
+                            <div class="contact-detail"><span>EMAIL</span><a id="contactEmail" href="#"></a></div>
+                            <div class="contact-detail"><span>PHONE</span><a id="contactPhone" href="#"></a></div>
+                            <div class="contact-detail"><span>LOCATION</span><strong id="contactLocation"></strong></div>
+                            <div class="contact-detail"><span>LINKEDIN</span><a id="contactLinkedin" href="#" target="_blank" rel="noreferrer">View LinkedIn</a></div>
+                            <div class="contact-detail"><span>GITHUB</span><a id="contactGithub" href="#" target="_blank" rel="noreferrer">View GitHub</a></div>
+                        </div>
+
+                        <div class="panel">
+                            <span class="eyebrow">LET'S WORK TOGETHER</span>
+
+                            <h3>Have a project in mind?</h3>
+
+                            <p>
+                                I'm available for full-stack development projects, web applications,
+                                API integrations, and custom software solutions.
+                            </p>
+
+                            <a id="contactEmailButton" class="button button-primary" href="#">
+                                Get in Touch <span>→</span>
+                            </a>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <!-- Project image lightbox -->
+    <div class="lightbox" id="projectLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+        <div class="lightbox-dialog">
+            <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image preview">×</button>
+            <img class="lightbox-image" id="lightboxImage" alt="">
+            <div class="lightbox-caption">
+                <strong id="lightboxTitle"></strong>
+                <span id="lightboxCategory"></span>
+            </div>
+        </div>
+    </div>
+
+    <noscript>
+        <div class="noscript">This portfolio uses a small JavaScript file to load the editable JSON content. Please
+            enable JavaScript.</div>
+    </noscript>
+
+    <script type="application/json" id="resume-data-fallback">
+        {
+            "profile": {
+                "name": "John Paul Sargento",
+                "title": "Full Stack Software Developer",
+                "location": "Davao City, Philippines",
+                "email": "sargento.johnpaulalingalan@gmail.com",
+                "phone": "+639959053870",
+                "linkedin": "https://www.linkedin.com/in/john-paul-sargento/",
+                "github": "https://github.com/whitepawn07",
+                "image": "assets/images/profile.jpg",
+                "availability": "Open to opportunities"
+            },
+            "summary": "Software Developer with 9+ years of experience specializing in high-performance backend systems using PHP (8.2+) and Laravel (11.x). Ability in optimizing performance, integrating complex systems, and delivering scalable applications. Experienced in designing scalable architectures using layered structures, repository patterns, and service providers. Strong background in backend development (PHP, Laravel, MySQL), modern frontend frameworks (React.js, Next.js), and headless CMS solutions (Sanity.io, Strapi). Experienced in databases optimization, API design, and maintaining large-scale applications with complex service dependencies. Advocate of clean code, automated testing, and CI/CD practices in AWS environments.",
+            "stats": [{
+                    "value": "9+",
+                    "label": "Years Experience"
+                },
+                {
+                    "value": "4",
+                    "label": "Professional Roles"
+                },
+                {
+                    "value": "PHP",
+                    "label": "Backend Focus"
+                },
+                {
+                    "value": "AWS",
+                    "label": "Cloud Experience"
+                }
+            ],
+            "services": [{
+                    "icon": "code",
+                    "title": "Backend Development",
+                    "description": "PHP, Laravel, database optimization, RESTful services, scalable backend architecture."
+                },
+                {
+                    "icon": "layers",
+                    "title": "Full Stack Development",
+                    "description": "Modern web applications using React.js, Next.js, TypeScript and backend APIs."
+                },
+                {
+                    "icon": "database",
+                    "title": "System Integration",
+                    "description": "Third-party APIs, CMS platforms, payment systems, video conferencing and CRM integrations."
+                },
+                {
+                    "icon": "cloud",
+                    "title": "Cloud & DevOps",
+                    "description": "Docker, AWS S3, AWS Amplify, Git, Linux and deployment-oriented development workflows."
+                }
+            ],
+            "skills": [{
+                    "name": "PHP",
+                    "icon": "php"
+                },
+                {
+                    "name": "Laravel",
+                    "icon": "laravel"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "javascript"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "typescript"
+                },
+                {
+                    "name": "Python",
+                    "icon": "python"
+                },
+                {
+                    "name": "React.js",
+                    "icon": "react"
+                },
+                {
+                    "name": "Next.js",
+                    "icon": "nextjs"
+                },
+                {
+                    "name": "Vue.js",
+                    "icon": "vue"
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "node"
+                },
+                {
+                    "name": "Django",
+                    "icon": "django"
+                },
+                {
+                    "name": "Strapi v5",
+                    "icon": "strapi"
+                },
+                {
+                    "name": "Sanity.io",
+                    "icon": "sanity"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mysql"
+                },
+                {
+                    "name": "AWS",
+                    "icon": "aws"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "docker"
+                },
+                {
+                    "name": "Git",
+                    "icon": "git"
+                },
+                {
+                    "name": "Linux",
+                    "icon": "linux"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "icon": "tailwind"
+                }
+            ],
+            "experience": [{
+                    "role": "Full Stack Software Developer",
+                    "company": "Boyand Vic Pty Ltd, Unique Promotions",
+                    "dates": "September 2023 - Present",
+                    "location": "Remote",
+                    "bullets": [
+                        "Implemented a Retrieval-Augmented Generation (RAG) chatbot by integrating LLM APIs with a custom knowledge base, enabling context-aware and accurate responses for users.",
+                        "Maintained and enhanced a CMS using Laravel Nova and Next.js, improving content management workflows.",
+                        "Drove the development of a new content-rich website using Next.js and Sanity.io, improved site performance and content editor efficiency.",
+                        "Implemented Strapi v5 for a project requiring a highly customizable API, providing the client with greater content control.",
+                        "Utilized a monorepo structure (using Yarn Workspaces) to manage shared code across multiple Next.js projects, enhancing code reuse and simplifying dependency management.",
+                        "Designed and implemented RESTful APIs for seamless integration between frontend and backend services.",
+                        "Utilized Docker for containerization, improving deployment processes and application scalability.",
+                        "Implemented AWS S3 for secure and scalable file storage and used AWS Amplify to deploy and manage Next.js applications."
+                    ]
+                },
+                {
+                    "role": "Backend Developer",
+                    "company": "Make Interactive",
+                    "dates": "January 2021 - September 2024",
+                    "location": "Davao City",
+                    "bullets": [
+                        "Redesign data model, removing duplicate records from the database and increasing query performance.",
+                        "Refactored legacy code and reduction in code complexity.",
+                        "Integrated third party video conferencing software including Jitsi, Zoom, and Google Meet to streamline virtual meetings and improve collaboration efficiency.",
+                        "Developed and deployed an automated integration process that synced customer data between the client's site and Hubspot.",
+                        "Conducted performance profiling and implemented critical optimizations, significantly enhancing application stability and reducing server load."
+                    ]
+                },
+                {
+                    "role": "Full Stack Web Developer",
+                    "company": "Tactivstudios",
+                    "dates": "September 2019 - December 2020",
+                    "location": "Davao City",
+                    "bullets": [
+                        "Collaborated with engineers and software developers to select optimal design solutions and ensure system component compatibility.",
+                        "Analyzed user needs to identify essential software components, evaluated system component suitability, and provided recommendations for component use.",
+                        "Consulted with management, engineering, and technical teams to clarify project objectives, identify potential issues, and propose effective solutions.",
+                        "Conducted thorough code reviews to guarantee that deliverables met user requirements and achieved the desired output.",
+                        "Developed and executed unit test scripts to ensure software quality and reliability."
+                    ]
+                },
+                {
+                    "role": "Web Developer",
+                    "company": "Futuristech Inc.",
+                    "dates": "August 2017 - June 2019",
+                    "location": "Davao City",
+                    "bullets": [
+                        "Designed and implemented RESTful APIs for an online ordering system, enabling seamless data exchange and application integration.",
+                        "Integrated third-party payment gateways (Stripe, Eway, PayPal) and POS systems (Kounta, Paystream, Braintree, Square), delivering a seamless and secure payment experience for customers.",
+                        "Developed and maintained web applications, working closely with management and development teams to prioritize needs and resolve conflicts effectively.",
+                        "Maintained a strong understanding of emerging web technologies through continuous learning and active participation in industry conferences.",
+                        "Integrated a real-time chat feature into an existing web application, enhancing user engagement and communication."
+                    ]
+                }
+            ],
+            "education": [{
+                "degree": "Bachelor of Science in Information Technology",
+                "school": "University of Southeastern Philippines",
+                "location": "Davao City",
+                "year": "2019"
+            }],
+            "projects": [{
+                    "title": "RAG AI Chatbot",
+                    "category": "AI / Backend",
+                    "description": "Retrieval-Augmented Generation chatbot integrating LLM APIs with a custom knowledge base for context-aware responses.",
+                    "tags": [
+                        "RAG",
+                        "LLM APIs",
+                        "PHP",
+                        "Laravel"
+                    ],
+                    "image": "assets/images/rag-ai-chatbot-showcase.png",
+                    "url": ""
+                },
+
+                {
+                    "title": "Next.js + Sanity Content Website",
+                    "category": "Frontend / CMS",
+                    "description": "Content-rich website built with Next.js and Sanity.io, with a focus on performance and content editor efficiency.",
+                    "tags": [
+                        "Next.js",
+                        "Sanity.io",
+                        "React.js"
+                    ],
+                    "image": "assets/images/project-sanity.svg",
+                    "url": ""
+                },
+                {
+                    "title": "Strapi v5 API Platform",
+                    "category": "Backend / CMS",
+                    "description": "Implemented Strapi v5 for a highly customizable API and greater content control.",
+                    "tags": [
+                        "Strapi v5",
+                        "REST API",
+                        "Node.js"
+                    ],
+                    "image": "assets/images/project-strapi.svg",
+                    "url": ""
+                },
+                {
+                    "title": "Viandly",
+                    "category": "Mobile Application",
+                    "description": "Recipe library platform for importing, organizing, scaling, converting, cooking, printing and sharing recipes across devices.",
+                    "tags": [
+                        "Recipe Library",
+                        "Mobile App",
+                        "React Native",
+                        "Expo",
+                        "Supabase",
+                        "AI",
+                        "OCR"
+                    ],
+                    "image": "assets/images/project-viandly.svg",
+                    "url": ""
+                },
+                {
+                    "title": "Convoy — Real-Time Road Trip Companion",
+                    "category": "Product / Backend",
+                    "description": "Real-time road trip companion project focused on convoys, trips, stops, navigation, live GPS, notifications, voice, memories and admin workflows.",
+                    "tags": [
+                        "Laravel 12",
+                        "PHP 8.3+",
+                        "PostgreSQL",
+                        "PostGIS"
+                    ],
+                    "image": "assets/images/project-convoy.png",
+                    "url": ""
+                },
+            ],
+            "skillsGroups": [{
+                    "title": "Core",
+                    "items": [
+                        "Object-oriented programming",
+                        "API design and integration",
+                        "Backend development",
+                        "Frontend development",
+                        "Performance optimization",
+                        "RESTful services",
+                        "Full-stack development"
+                    ]
+                },
+                {
+                    "title": "Languages",
+                    "items": [
+                        "PHP",
+                        "JavaScript",
+                        "TypeScript",
+                        "Python"
+                    ]
+                },
+                {
+                    "title": "CMS",
+                    "items": [
+                        "Sanity.io",
+                        "Strapi v5"
+                    ]
+                },
+                {
+                    "title": "Frameworks / Libraries",
+                    "items": [
+                        "Laravel",
+                        "CodeIgniter",
+                        "React.js",
+                        "Next.js",
+                        "Vue.js",
+                        "Node.js",
+                        "Django",
+                        "GraphQL"
+                    ]
+                },
+                {
+                    "title": "Databases",
+                    "items": [
+                        "MySQL"
+                    ]
+                },
+                {
+                    "title": "DevOps",
+                    "items": [
+                        "Git",
+                        "Docker",
+                        "AWS (S3, Elastic Beanstalk, Amplify)",
+                        "Linux"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "items": [
+                        "RESTful APIs",
+                        "TailwindCSS",
+                        "Monorepo (Yarn Workspaces)"
+                    ]
+                }
+            ],
+            "site": {
+                "title": "John Paul Sargento | Full Stack Software Developer",
+                "description": "John Paul Sargento — Full Stack Software Developer with 9+ years of experience in PHP, Laravel, React.js, Next.js, APIs, CMS, databases, Docker and AWS.",
+                "accent": "#7c5cff"
+            }
+        }
+    </script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

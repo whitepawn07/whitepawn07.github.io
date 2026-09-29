@@ -1,0 +1,326 @@
+{
+    "profile": {
+        "name": "John Paul Sargento",
+        "title": "Full Stack Software Developer",
+        "location": "Davao City, Philippines",
+        "email": "sargento.johnpaulalingalan@gmail.com",
+        "phone": "+639959053870",
+        "linkedin": "https://www.linkedin.com/in/john-paul-sargento/",
+        "github": "https://github.com/whitepawn07",
+        "image": "assets/images/profile.jpg",
+        "availability": "Open to opportunities"
+    },
+    "summary": "Software Developer with 9+ years of experience specializing in high-performance backend systems using PHP (8.2+) and Laravel (11.x). Ability in optimizing performance, integrating complex systems, and delivering scalable applications. Experienced in designing scalable architectures using layered structures, repository patterns, and service providers. Strong background in backend development (PHP, Laravel, MySQL), modern frontend frameworks (React.js, Next.js), and headless CMS solutions (Sanity.io, Strapi). Experienced in databases optimization, API design, and maintaining large-scale applications with complex service dependencies. Advocate of clean code, automated testing, and CI/CD practices in AWS environments.",
+    "stats": [{
+            "value": "9+",
+            "label": "Years Experience"
+        },
+        {
+            "value": "4",
+            "label": "Professional Roles"
+        },
+        {
+            "value": "PHP",
+            "label": "Backend Focus"
+        },
+        {
+            "value": "AWS",
+            "label": "Cloud Experience"
+        }
+    ],
+    "services": [{
+            "icon": "server",
+            "title": "Backend Development",
+            "description": "PHP, Laravel, database optimization, RESTful services, scalable backend architecture."
+        },
+        {
+            "icon": "layers",
+            "title": "Full Stack Development",
+            "description": "Modern web applications using React.js, Next.js, TypeScript and backend APIs."
+        },
+        {
+            "icon": "plug",
+            "title": "System Integration",
+            "description": "Third-party APIs, CMS platforms, payment systems, video conferencing and CRM integrations."
+        },
+        {
+            "icon": "cloud",
+            "title": "Cloud & DevOps",
+            "description": "Docker, AWS S3, AWS Amplify, Git, Linux and deployment-oriented development workflows."
+        }
+    ],
+    "skills": [{
+            "name": "PHP",
+            "icon": "php"
+        },
+        {
+            "name": "Laravel",
+            "icon": "laravel"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "javascript"
+        },
+        {
+            "name": "TypeScript",
+            "icon": "typescript"
+        },
+        {
+            "name": "Python",
+            "icon": "python"
+        },
+        {
+            "name": "React.js",
+            "icon": "react"
+        },
+        {
+            "name": "Next.js",
+            "icon": "nextjs"
+        },
+        {
+            "name": "Vue.js",
+            "icon": "vue"
+        },
+        {
+            "name": "Node.js",
+            "icon": "node"
+        },
+        {
+            "name": "Django",
+            "icon": "django"
+        },
+        {
+            "name": "Strapi v5",
+            "icon": "strapi"
+        },
+        {
+            "name": "Sanity.io",
+            "icon": "sanity"
+        },
+        {
+            "name": "MySQL",
+            "icon": "mysql"
+        },
+        {
+            "name": "AWS",
+            "icon": "aws"
+        },
+        {
+            "name": "Docker",
+            "icon": "docker"
+        },
+        {
+            "name": "Git",
+            "icon": "git"
+        },
+        {
+            "name": "Linux",
+            "icon": "linux"
+        },
+        {
+            "name": "TailwindCSS",
+            "icon": "tailwind"
+        }
+    ],
+    "experience": [{
+            "role": "Full Stack Software Developer",
+            "company": "Boyand Vic Pty Ltd, Unique Promotions",
+            "dates": "September 2023 - Present",
+            "location": "Remote",
+            "bullets": [
+                "Implemented a Retrieval-Augmented Generation (RAG) chatbot by integrating LLM APIs with a custom knowledge base, enabling context-aware and accurate responses for users.",
+                "Maintained and enhanced a CMS using Laravel Nova and Next.js, improving content management workflows.",
+                "Drove the development of a new content-rich website using Next.js and Sanity.io, improved site performance and content editor efficiency.",
+                "Implemented Strapi v5 for a project requiring a highly customizable API, providing the client with greater content control.",
+                "Utilized a monorepo structure (using Yarn Workspaces) to manage shared code across multiple Next.js projects, enhancing code reuse and simplifying dependency management.",
+                "Designed and implemented RESTful APIs for seamless integration between frontend and backend services.",
+                "Utilized Docker for containerization, improving deployment processes and application scalability.",
+                "Implemented AWS S3 for secure and scalable file storage and used AWS Amplify to deploy and manage Next.js applications."
+            ]
+        },
+        {
+            "role": "Backend Developer",
+            "company": "Make Interactive",
+            "dates": "January 2021 - September 2024",
+            "location": "Davao City",
+            "bullets": [
+                "Redesign data model, removing duplicate records from the database and increasing query performance.",
+                "Refactored legacy code and reduction in code complexity.",
+                "Integrated third party video conferencing software including Jitsi, Zoom, and Google Meet to streamline virtual meetings and improve collaboration efficiency.",
+                "Developed and deployed an automated integration process that synced customer data between the client's site and Hubspot.",
+                "Conducted performance profiling and implemented critical optimizations, significantly enhancing application stability and reducing server load."
+            ]
+        },
+        {
+            "role": "Full Stack Web Developer",
+            "company": "Tactivstudios",
+            "dates": "September 2019 - December 2020",
+            "location": "Davao City",
+            "bullets": [
+                "Collaborated with engineers and software developers to select optimal design solutions and ensure system component compatibility.",
+                "Analyzed user needs to identify essential software components, evaluated system component suitability, and provided recommendations for component use.",
+                "Consulted with management, engineering, and technical teams to clarify project objectives, identify potential issues, and propose effective solutions.",
+                "Conducted thorough code reviews to guarantee that deliverables met user requirements and achieved the desired output.",
+                "Developed and executed unit test scripts to ensure software quality and reliability."
+            ]
+        },
+        {
+            "role": "Web Developer",
+            "company": "Futuristech Inc.",
+            "dates": "August 2017 - June 2019",
+            "location": "Davao City",
+            "bullets": [
+                "Designed and implemented RESTful APIs for an online ordering system, enabling seamless data exchange and application integration.",
+                "Integrated third-party payment gateways (Stripe, Eway, PayPal) and POS systems (Kounta, Paystream, Braintree, Square), delivering a seamless and secure payment experience for customers.",
+                "Developed and maintained web applications, working closely with management and development teams to prioritize needs and resolve conflicts effectively.",
+                "Maintained a strong understanding of emerging web technologies through continuous learning and active participation in industry conferences.",
+                "Integrated a real-time chat feature into an existing web application, enhancing user engagement and communication."
+            ]
+        }
+    ],
+    "education": [{
+        "degree": "Bachelor of Science in Information Technology",
+        "school": "University of Southeastern Philippines",
+        "location": "Davao City",
+        "year": "2019"
+    }],
+    "projects": [{
+            "title": "RAG AI Chatbot",
+            "category": "AI / Backend",
+            "description": "Retrieval-Augmented Generation chatbot integrating LLM APIs with a custom knowledge base for context-aware responses.",
+            "tags": [
+                "RAG",
+                "LLM APIs",
+                "PHP",
+                "Laravel"
+            ],
+            "image": "assets/images/rag-ai-chatbot-showcase.png",
+            "url": ""
+        },
+        {
+            "title": "Next.js + Sanity Content Website",
+            "category": "Frontend / CMS",
+            "description": "Content-rich website built with Next.js and Sanity.io, with a focus on performance and content editor efficiency.",
+            "tags": [
+                "Next.js",
+                "Sanity.io",
+                "React.js"
+            ],
+            "image": "assets/images/project-sanity.png",
+            "url": ""
+        },
+        {
+            "title": "Strapi v5 API Platform",
+            "category": "Backend / CMS",
+            "description": "Implemented Strapi v5 for a highly customizable API and greater content control.",
+            "tags": [
+                "Strapi v5",
+                "REST API",
+                "React",
+                "Monorepo"
+            ],
+            "image": "assets/images/project-strapi.png",
+            "url": ""
+        },
+        {
+            "title": "Viandly",
+            "category": "Mobile Application",
+            "description": "Recipe library platform for importing, organizing, scaling, converting, cooking, printing and sharing recipes across devices.",
+            "tags": [
+                "Recipe Library",
+                "Mobile App",
+                "React Native",
+                "Expo",
+                "Supabase",
+                "AI",
+                "OCR"
+            ],
+            "image": "assets/images/project-viandly.png"
+        },
+        {
+            "title": "Convoy — Real-Time Road Trip Companion",
+            "category": "Mobile / Backend",
+            "description": "Real-time road trip companion project focused on convoys, trips, stops, navigation, live GPS, notifications, voice, memories and admin workflows.",
+            "tags": [
+                "Laravel 12",
+                "PHP 8.3+",
+                "React Native",
+                "PostgreSQL",
+                "PostGIS",
+                "Expo"
+            ],
+            "image": "assets/images/project-convoy.png",
+            "url": ""
+        }
+    ],
+    "skillsGroups": [{
+            "title": "Core",
+            "items": [
+                "Object-oriented programming",
+                "API design and integration",
+                "Backend development",
+                "Frontend development",
+                "Performance optimization",
+                "RESTful services",
+                "Full-stack development"
+            ]
+        },
+        {
+            "title": "Languages",
+            "items": [
+                "PHP",
+                "JavaScript",
+                "TypeScript",
+                "Python"
+            ]
+        },
+        {
+            "title": "CMS",
+            "items": [
+                "Sanity.io",
+                "Strapi v5"
+            ]
+        },
+        {
+            "title": "Frameworks / Libraries",
+            "items": [
+                "Laravel",
+                "CodeIgniter",
+                "React.js",
+                "Next.js",
+                "Vue.js",
+                "Node.js",
+                "Django",
+                "GraphQL"
+            ]
+        },
+        {
+            "title": "Databases",
+            "items": [
+                "MySQL"
+            ]
+        },
+        {
+            "title": "DevOps",
+            "items": [
+                "Git",
+                "Docker",
+                "AWS (S3, Elastic Beanstalk, Amplify)",
+                "Linux"
+            ]
+        },
+        {
+            "title": "Other",
+            "items": [
+                "RESTful APIs",
+                "TailwindCSS",
+                "Monorepo (Yarn Workspaces)"
+            ]
+        }
+    ],
+    "site": {
+        "title": "John Paul Sargento | Full Stack Software Developer",
+        "description": "John Paul Sargento — Full Stack Software Developer with 9+ years of experience in PHP, Laravel, React.js, Next.js, APIs, CMS, databases, Docker and AWS.",
+        "accent": "#7c5cff"
+    }
+}
