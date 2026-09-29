@@ -1,0 +1,27 @@
+# GitHub Pages configuration
+title: "John Paul — Full Stack Developer"
+description: "Full Stack Developer specializing in PHP, Laravel, React, Next.js, TypeScript and modern web applications."
+
+# GitHub Pages
+theme: null
+
+# Prevent Jekyll from processing files that don't need to be processed
+exclude:
+  - node_modules
+  - README.md
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - pnpm-lock.yaml
+  - .DS_Store
+  - .git
+  - .github
+
+# Keep these files/directories as-is
+include:
+  - data
+  - assets
+  - images
+
+# Encoding
+encoding: utf-8
