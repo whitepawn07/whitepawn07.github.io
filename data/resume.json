@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "John Paul Sargento",
-        "title": "Full Stack Software Developer",
+        "title": "Full Stack Web Developer",
         "location": "Davao City, Philippines",
         "email": "sargento.johnpaulalingalan@gmail.com",
         "phone": "+639959053870",
@@ -10,7 +10,7 @@
         "image": "assets/images/profile.jpg",
         "availability": "Open to opportunities"
     },
-    "summary": "Software Developer with 9+ years of experience specializing in high-performance backend systems using PHP (8.2+) and Laravel (11.x). Ability in optimizing performance, integrating complex systems, and delivering scalable applications. Experienced in designing scalable architectures using layered structures, repository patterns, and service providers. Strong background in backend development (PHP, Laravel, MySQL), modern frontend frameworks (React.js, Next.js), and headless CMS solutions (Sanity.io, Strapi). Experienced in databases optimization, API design, and maintaining large-scale applications with complex service dependencies. Advocate of clean code, automated testing, and CI/CD practices in AWS environments.",
+    "summary": "Full Stack Web Developer with 9+ years of experience specializing in high-performance backend systems using PHP (8.2+) and Laravel (11.x). Skilled in performance optimization, complex system integrations, and scalable application delivery. Experienced in designing scalable architectures with layered structures, repository patterns, and service providers. Strong background in backend development (PHP, Laravel, MySQL), modern frontend frameworks (React.js, Next.js), and headless CMS solutions (Sanity.io, Strapi). Experienced in database optimization, API design, and maintaining large-scale applications with complex service dependencies. Advocate of clean code, automated testing, and CI/CD practices in AWS environments.",
     "stats": [{
             "value": "9+",
             "label": "Years Experience"
@@ -319,8 +319,8 @@
         }
     ],
     "site": {
-        "title": "John Paul Sargento | Full Stack Software Developer",
-        "description": "John Paul Sargento — Full Stack Software Developer with 9+ years of experience in PHP, Laravel, React.js, Next.js, APIs, CMS, databases, Docker and AWS.",
+        "title": "John Paul Sargento | Full Stack Web Developer | PHP & Laravel",
+        "description": "John Paul Sargento is a Full Stack Web Developer with 9+ years of experience specializing in PHP, Laravel, React, Next.js, Strapi, API development, and scalable web applications.",
         "accent": "#7c5cff"
     }
 }

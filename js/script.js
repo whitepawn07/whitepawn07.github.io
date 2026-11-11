@@ -322,7 +322,7 @@ function projectHtml(project) {
       data-project-title="${escapeHtml(project.title)}"
       data-project-category="${escapeHtml(project.category)}"
       aria-label="View larger image of ${escapeHtml(project.title)}">
-      <img class="project-image" src="${escapeHtml(project.image)}" alt="${escapeHtml(project.title)} preview">
+      <img class="project-image" src="${escapeHtml(project.image)}" alt="${escapeHtml(project.title)} project preview" loading="lazy">
     </button>
     <div class="project-body">
       <div class="project-category">${escapeHtml(project.category)}</div>
