@@ -42,7 +42,7 @@ window.PORTFOLIO_GA4 = window.PORTFOLIO_GA4 || {
         }
     };
 
-    const currentPage = () => document.querySelector(".page.active") ? .dataset.pageContent || "about";
+    const currentPage = () => document.querySelector(".page.active").dataset.pageContent || "about";
     const pageView = pageName => send("page_view", {
         page_title: document.title,
         page_location: safeLocation(),
@@ -53,7 +53,7 @@ window.PORTFOLIO_GA4 = window.PORTFOLIO_GA4 || {
 
     const locationName = element => {
         const section = element.closest("[id]");
-        if (section ? .id) return section.id;
+        if (section.id) return section.id;
         if (element.closest("nav")) return "navigation";
         if (element.closest("footer")) return "footer";
         return "profile";
@@ -69,7 +69,7 @@ window.PORTFOLIO_GA4 = window.PORTFOLIO_GA4 || {
     };
 
     document.addEventListener("click", event => {
-        const target = event.target instanceof Element ? event.target : event.target ? .parentElement;
+        const target = event.target instanceof Element ? event.target : event.target.parentElement;
         if (!target) return;
 
         const nav = target.closest(".nav-link, [data-go-page]");
@@ -94,7 +94,7 @@ window.PORTFOLIO_GA4 = window.PORTFOLIO_GA4 || {
         const projectCard = link.closest(".project-card");
 
         if (link.hasAttribute("download")) {
-            const fileName = (link.getAttribute("download") || url ? .pathname.split("/").pop() || "download").split(/[?#]/)[0];
+            const fileName = (link.getAttribute("download") || url.pathname.split("/").pop() || "download").split(/[?#]/)[0];
             if (/\.pdf$/i.test(fileName) || link.classList.contains("resume-download-button")) {
                 send("resume_download", {
                     file_name: fileName,
@@ -118,8 +118,8 @@ window.PORTFOLIO_GA4 = window.PORTFOLIO_GA4 || {
         }
         if (projectCard && isExternal) {
             send("project_click", {
-                project_name: projectCard.querySelector("h4") ? .textContent.trim() || "unknown",
-                project_category: projectCard.querySelector(".project-category") ? .textContent.trim() || "unknown",
+                project_name: projectCard.querySelector("h4").textContent.trim() || "unknown",
+                project_category: projectCard.querySelector(".project-category").textContent.trim() || "unknown",
                 destination_url: linkUrl
             });
             return;
