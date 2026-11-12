@@ -1,8 +1,8 @@
 # Google indexing investigation
 
-**Verification date:** 2026-11-11  
-**Production URL:** <https://whitepawn07.github.io/>  
-**Status:** Unable to verify Google indexing.
+**Verification date:** 2026-11-11
+**Production URL:** <https://whitepawn07.github.io/>
+**Status:** Search Console confirms the homepage and resume are not indexed yet. Both passed live tests and indexing requests were accepted.
 
 ## Search queries attempted
 
@@ -13,23 +13,25 @@
 - `"John Paul Sargento" portfolio`
 - `"whitepawn07.github.io"`
 
-The available web search tool returned no result from `whitepawn07.github.io` for these queries. It did return a matching LinkedIn profile in general-name searches. The tool does not provide Google Search Console index coverage evidence; these observations do not prove the site is absent from Google's index.
+The available web search tool returned no portfolio-domain results and did return a matching LinkedIn profile in general-name searches. Search Console provides the verified indexing evidence below; the web search observations alone do not establish index status.
 
 ## Page status
 
-| URL | Search observation | Google index status |
+| URL | Search Console result | Status |
 | --- | --- | --- |
-| `https://whitepawn07.github.io/` | No result returned in the attempted search queries | Unable to verify |
-| `https://whitepawn07.github.io/resume.html` | No result returned for the resume-specific/site-restricted check | Unable to verify |
-| Other pages | Homepage tabs do not have separate URLs; no other public HTML page was found in the repository | Not applicable / unable to verify |
+| `https://whitepawn07.github.io/` | “URL is not on Google”; “URL is unknown to Google.” Live test: available to Google, can be indexed, one valid ProfilePage item detected. Request accepted into priority crawl queue. | Not indexed at 9:45 PM Manila time on 2026-11-11; recrawl pending |
+| `https://whitepawn07.github.io/resume.html` | “URL is not on Google”; “URL is unknown to Google.” Live test: available to Google, can be indexed, one valid ProfilePage item detected. Request accepted into priority crawl queue. | Not indexed at 9:46 PM Manila time on 2026-11-11; recrawl pending |
+| Other pages | Homepage sections are tabs in one document; no other public HTML page was found in the repository. | Not applicable |
 
 ## Crawl and index checks
 
-- The checked-out source had no `noindex` directive, canonical URL, `robots.txt`, or sitemap before implementation.
-- Network/DNS access from this environment could not resolve `whitepawn07.github.io`, so live HTTP responses for the site, `robots.txt`, and `sitemap.xml` could not be verified.
-- The repository remote is `whitepawn07/whitepawn07.github.io`, and root deployment is documented. This supports configuration compatibility but does not prove that Pages is enabled or deployed.
-- Search Console was not connected or available, so there is no evidence of “discovered,” “crawled,” or “indexed” status.
+- Search Console ownership was verified with `google02d83767b3932901.html`. Keep this file at the repository root to preserve verification.
+- GitHub Pages deployment for commit `8096183` completed successfully. The verification file was publicly served at its expected URL.
+- The live sitemap opens as XML and contains the homepage and resume URLs. Live `robots.txt` allows all crawlers and names the production sitemap.
+- Search Console accepted `/sitemap.xml`, but its report says **“Sitemap could not be read”**, Last read `11/11/26`, and 0 discovered pages. The browser can open the XML and shows both expected URLs. Recheck after Google retries processing; the discrepancy remains unresolved.
+- Search Console Overview said Performance and Indexing reports were processing data and to check again in a day or so. Search impressions and average position for the name query are not available yet.
+- The GitHub repository About panel currently says no description, website, or topics are provided. Public profile/repository metadata was left unchanged under the scope constraint. Add the portfolio link there manually if desired. LinkedIn's website link could not be confirmed from the available public profile view.
 
 ## Conclusion and next action
 
-The portfolio's Google index state is **unverified**. Do not interpret missing results from this search tool as a confirmed deindexing result. After deploying the metadata, sitemap, and robots changes, add the URL-prefix property in Search Console, submit `https://whitepawn07.github.io/sitemap.xml`, and inspect both public URLs. Follow the setup guide in this directory.
+Both pages are currently not indexed because Google did not yet know their URLs. Both are eligible for indexing, and both are in the priority crawl queue. The sitemap submission is present but currently reports a read failure; recheck its status after processing. Review the Page Indexing and Performance reports after they finish processing. Indexing requests do not guarantee indexing or a page-one ranking.

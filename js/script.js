@@ -362,6 +362,7 @@ function renderFilters() {
 }
 
 function navigate(page) {
+    const previousPage = document.querySelector(".page.active")?.dataset.pageContent;
     $$(".nav-link").forEach(button => {
         button.classList.toggle("active", button.dataset.page === page);
     });
@@ -369,6 +370,8 @@ function navigate(page) {
     $$(".page").forEach(article => {
         article.classList.toggle("active", article.dataset.pageContent === page);
     });
+
+    if (previousPage !== page) window.portfolioAnalytics?.pageChanged(page);
 
     if (window.innerWidth < 821) window.scrollTo({
         top: 0,
